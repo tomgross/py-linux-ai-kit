@@ -25,3 +25,18 @@ Installation
  4. Have a coffee 
 
 This will spawn a VirtualBox with a GUI and all the tools in place.
+
+Playing
+=======
+
+ - Enter the GUI with standard vagrant credentials.
+ - Start a terminal
+ - Go to /home/vagrant/gym
+ - Enter Python virtual environment: $ source bin/activate
+ - Run $ python /vagrant/cartpole.py
+ - See the hammer moving ;-)
+ 
+Further information
+===================
+
+ - Website of OpenAI gym: https://gym.openai.com/
