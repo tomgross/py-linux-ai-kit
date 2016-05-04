@@ -69,8 +69,11 @@ Vagrant.configure(2) do |config|
      sudo apt-get update
      sudo apt-get install -y python3.5 vim git cmake
      curl -o /dev/stdout https://bootstrap.pypa.io/get-pip.py | python3.5
+     pip install virtualenv
+     cd /usr/local/bin
+     ln -s virtualenv virtualenv-3.5
   SHELL
   
-  # config.vm.provision :shell, :path => "install_openai_gym.sh"
+  config.vm.provision :shell, :path => "install_openai_gym.sh"
 
 end
